@@ -1,0 +1,29 @@
+<p>table works!</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sr.No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Nick Name</th>
+                <th>Jersy Number</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let player of playersInfo;let i=index">
+                <td>{{i+1}}</td>
+                <td>{{player.fName}}</td>
+                <td>{{player.lName}}</td>
+                <td>{{player.nickName}}</td>
+                <td>{{player.jersynum}}</td>
+                <td>{{player.age}}</td>
+                <td>{{player.email}}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>

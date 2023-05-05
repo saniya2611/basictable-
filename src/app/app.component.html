@@ -1,0 +1,61 @@
+<h1 class="bg-primary text-white p-4">Basics</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <app-tab></app-tab>
+    </div>
+    <hr>
+    <div class="col-sm-12">
+      <button class="btn btn-primary">click</button>
+      <hr>
+      <app-handset></app-handset>
+      <app-school></app-school>
+      <app-blog></app-blog>
+      <app-trending></app-trending>
+      <app-hospital></app-hospital>
+      <app-products></app-products>
+      <app-product></app-product>
+     
+      <hr>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let skill of skills">
+          I Love {{skill}}
+        </li>
+      </ul>
+      <hr>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor = "let age of ages">
+          I Am {{age}}
+        </li>
+      </ul>
+      <hr>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let country of countries">
+           This country name is {{country}}
+        </li>
+      </ul>
+      <hr>
+      <app-cards></app-cards>
+      <hr>
+      <div class="col-sm-12">
+        <app-skill-sets></app-skill-sets>
+        <app-table></app-table>
+      </div>
+      <hr>
+        
+
+    
+    </div>
+  </div>
+</div>
+
+
+
+<!-- all component will be in a folder -->
+<!-- all code will be in app -->
+<!-- 
+  app.component.html 
+  app.component.scss
+  app.component.ts
+  app.component.spec.ts  >> Unit testing
+-->

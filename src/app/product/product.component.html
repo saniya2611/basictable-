@@ -1,0 +1,31 @@
+<button class="btn btn-primary mb-4 " [disabled] ="isDisabled"
+>Add Button</button>
+<div class="form-group">
+    <label for="">Product Search</label>
+    <input type="text" class="form-control" (input) = "onProductSearch($event)">
+</div>
+<div class="form-group">
+    <label for="">Product Search</label>
+    <input type="text" class="form-control"
+    [(ngModel)] ="searchProductName">
+</div>
+<!-- above example is of two way data binding -->
+<p>
+    {{searchProductName}}
+</p>
+<!-- <p [innerHTML]="searchProductName">
+
+</p> -->  
+<!-- property bindings -->
+<!-- $event >>argument  >> it will represet an event-->
+<!-- if we want something from input event we use eve.target -->
+<app-products></app-products>
+
+<button class="btn btn-primary mt-4 mr-4"[disabled] ="isDisabled"(click)="getProductStatus()">Add Product</button>
+
+<button class="btn btn-danger mt-4 ml-4"[disabled] ="noOfProducts === 0"(click)="onProductsRemove()">Remove Product</button>
+
+<p class="alert alert-info mt-4">
+    <!-- No product is added yet !! -->
+    {{productStatus}}
+</p>
